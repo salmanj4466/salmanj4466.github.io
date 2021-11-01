@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Favicon -->
+      <link href="assets/images/favicon.png" sizes="60x60" rel="shortcut icon" type="image/x-icon" />
+      <!-- Google fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+      <!-- Font Awsome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <title>Daily Analytics</title>
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="javascript:void(0)">
+            <img src="assets/images/favicon.png" alt="logo"> 
+            <span>inpease</span>
+            </a>
+            <ul class="navbar-nav ml-auto align-items-center">
+               <li class="nav-item">
+                  <a href="javascript:void(0)" class="ml-3" id="sidebar-toggle"><i class="fa fa-bars"></i> Menu</a>
+               </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="ml-3" id="sidebar-toggle"><i class="fa fa-angle-down"></i> <i class="fa fa-user"></i> Name</a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <div id="wrapper">
+         <aside id="sidebar-wrapper">
+            <!-- <a href="javascript:void(0)" class="d-lg-none" id="close"><i class="fa fa-times"></i></a> -->
+            <ul class="sidebar-nav">
+               <li class="active">
+                  <a href="account-setup.html"><i class="fa fa-user"></i></a>
+               </li>
+                <li>
+                  <a href="account-setup.html"><i class="fa fa-user"></i></a>
+               </li>
+            </ul>
+         </aside>
+
+
+         <section id="content-wrapper" class="main-content">
+            <div class="row justify-content-center align-items-center">
+               <div class="col-sm-8 col-lg-5">
+                  <div class="card">
+                    <div class="card-body">
+                     <p>There in No account linked to Daily Analytics yet. Kindly go to <strong>Connections</strong> section to link and account.</p>
+                     <a href="javascript:void(0)" class="btn btn-primary">Okay</a>
+                    </div>
+                  </div>
+               </div>
+            </div>
+            
+         </section>
+      </div>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script>
+         const $button  = document.querySelector('#sidebar-toggle');
+         const $wrapper = document.querySelector('#wrapper');
+         
+         $button.addEventListener('click', (e) => {
+          e.preventDefault();
+          $wrapper.classList.toggle('toggled');
+         });
+      </script>
+      <script>
+         $(document).ready(function(){
+          $("#close").click(function(){
+           $("#wrapper").removeClass('toggled');
+         });
+         });
+      </script>
+   </body>
+</html>
